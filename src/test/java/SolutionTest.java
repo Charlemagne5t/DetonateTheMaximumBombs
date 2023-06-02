@@ -35,4 +35,15 @@ public class SolutionTest {
         int output = 5;
         Assert.assertEquals(output, new Solution().maximumDetonation(bombs));
     }
+    @Test
+    public void maximumDetonationTest4() {
+        int[][] bombs = {
+                {1, 1, 100_000},
+                {100_000, 100_000, 1},
+
+        };
+        int output = 1;
+        Assert.assertEquals(output, new Solution().maximumDetonation(bombs));
+    }
+
 }
